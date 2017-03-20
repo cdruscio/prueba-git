@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0; /*quitar LOS MARGENES DEL CONTENEDOR*/
+  font-family: sans-serif;
+
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  border: 2px dotted red;
+  overflow: hidden;  /*limpia los margin de manera FACIL*/
+}
+.main-header{
+  width: 100vw;
+  height: 20vh;
+  border: 2px dotted blue;
+  background-color: grey;
+  margin: auto;
+}
+
+.cajaA,.cajaB,.cajaC{
+  float:left;
+
+}
+.cajaA{
+  width: 20.83%;
+  border: 2px dotted blue;
+  background-color: blue;
+
+}
+.cajaB{
+  width: 66.66%;
+  border: 2px dotted green;
+  background-color: green;
+  margin: 0 2.083%;
+}
+.cajaC{
+  width: 8.33%;
+  border: 2px dotted pink;
+  background-color: pink;
+}
+.header2{
+  font-size: 1.75em;
+}
+p{
+  font-size: 0.8125em;
+}
+strong{
+  font-size: 0.9375em;
+}
+
+@media (max-width:900px) {
+.container{
+  width: 95%;
+  padding: 1.66%;
+}
+.cajaA{
+  width: 40%;
+}
+.cajaB{
+  width: 55%;
+  float: right;
+  margin: 0;
+}
+.cajaC{
+  float:none;
+  clear: both;
+  width: 100%;
+}
+}
+@media (max-width:450px) {
+.cajaA,.cajaB,.cajaC{
+  width: 100%;
+  float: none;
+  clear: both;
+}
+body{
+  font-size: 1.3em;
+}
+
+}
